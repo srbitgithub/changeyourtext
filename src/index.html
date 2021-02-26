@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change your Text</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="contaier">
+        <h1 class="text-center mt-3 display-5 text-primary">CHANGE YOUR TEXT</h1>
+        <div class="row">
+            <div class="col">
+                <form class="form-group ml-5">
+                    <h2 display-8>Original text</h2>
+                    <textarea class="form-control w-85" rows=20></textarea>
+                    <p class="float-right">Characters left: 5000</p>
+                    <button class="btn btn-dark btn-block">starts text change</button>
+                    <button class="btn btn-danger btn-block">Reset all</button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="form-group mr-5">
+                    <h2 display-8>Changed text</h2>
+                    <textarea class="form-control w-85" rows=20 disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
