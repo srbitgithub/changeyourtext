@@ -33,7 +33,7 @@ console.log('Changing your text. Wait a few seconds, please');
     })
 
     await page.waitForTimeout(1000)
-
+    router.get
     urlIni = `https://translate.google.com/?sl=${stepOne}&tl=${stepTwo}&text=`
  
     const urlFrIt = `${urlIni}${textStepOne}`
