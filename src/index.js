@@ -1,8 +1,10 @@
-const app = require('./app')
+const express = require("express");
+//const bodyParser = require('body-parser')
 
-async function main() {
-    await app.listen(3000)
-    console.log('Serever is running')
-}
+const app = express();
 
-main()
+//app.use(bodyParser.json())
+app.use(express.json())
+app.use(require('./public/routes'))
+
+app.listen(3000, () => console.log('Server started at port 3000'))
